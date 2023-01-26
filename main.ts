@@ -152,5 +152,5 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    OLED.writeStringNewLine("A blocks left arrow, B blocks right arrow, A+B blocks up arrow, and shake blocks bottom arrow. You have 3 lives good luck.")
+    OLED.writeStringNewLine("Shake for bottom, A for left, B for right, and A+B for top.")
 })
