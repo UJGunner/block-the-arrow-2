@@ -73,6 +73,7 @@ let player_1_points = 0
 let player_1_lives = 0
 player_1_lives = 3
 player_1_points = 0
+OLED.init(128, 64)
 basic.forever(function () {
     arrow = randint(1, 4)
     if (arrow == 1) {
@@ -149,4 +150,7 @@ basic.forever(function () {
         basic.showString("score")
         basic.showString("" + (player_1_points))
     }
+})
+basic.forever(function () {
+    OLED.writeStringNewLine("A blocks left arrow, B blocks right arrow, A+B blocks up arrow, and shake blocks bottom arrow. You have 3 lives good luck.")
 })
